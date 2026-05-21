@@ -1251,6 +1251,10 @@ a:focus-visible {
   .org-cards { grid-template-columns: 1fr; }
   .res-table { font-size: 14px; }
   .zh-cell { font-size: 16px; }
+
+  /* Tap targets ≥44px on touch devices */
+  .btn-primary, .btn-ghost { padding: 12px 18px; min-height: 44px; }
+  .header-actions { row-gap: 8px; }
 }
 
 /* ─── Reduced Motion ────────────────────────────────────── */

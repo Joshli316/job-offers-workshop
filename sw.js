@@ -1,4 +1,4 @@
-const CACHE = 'job-offers-workshop-v5';
+const CACHE = 'job-offers-workshop-v6';
 const ASSETS = [
   '/',
   '/index.html',
