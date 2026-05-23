@@ -24,5 +24,6 @@ cp "$ROOT/_headers" "$DIST/"
 cp "$ROOT/robots.txt" "$DIST/"
 cp "$ROOT/sitemap.xml" "$DIST/"
 cp "$ROOT/og-image.png" "$DIST/"
+cp "$ROOT/apple-touch-icon.png" "$DIST/"
 
 echo "Built dist/ with $(ls "$DIST" | wc -l | tr -d ' ') files"

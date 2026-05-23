@@ -484,6 +484,10 @@ a:focus-visible {
 }
 .paycheck-hidden { display: none; }
 
+/* ─── Generic Inline SVG Viz ────────────────────────────── */
+.viz { display: flex; flex-direction: column; align-items: center; margin: 8px 0; }
+.viz-donut svg { display: block; }
+
 /* ─── 401k Visual ───────────────────────────────────────── */
 .match-illustration {
   background: var(--surface);

@@ -11,7 +11,7 @@
     4: '工资 · Pay',
     5: '医保 · Health',
     6: '互动 · Activity',
-    7: '401k · Retirement',
+    7: '401(k) · Retirement',
     8: '假期 · PTO',
     9: 'W-4',
     10: '互动 · Quiz',
@@ -25,7 +25,7 @@
   function toggleLang() {
     const isZh = document.body.classList.toggle('zh');
     localStorage.setItem('jow_lang', isZh ? 'zh' : 'en');
-    document.documentElement.lang = isZh ? 'zh-Hans' : 'en';
+    document.documentElement.lang = isZh ? 'zh-CN' : 'en';
     document.getElementById('langToggle').textContent = isZh ? '中文' : 'EN';
   }
 
@@ -33,7 +33,7 @@
     const saved = localStorage.getItem('jow_lang');
     const isZh = saved !== 'en';
     document.body.classList.toggle('zh', isZh);
-    document.documentElement.lang = isZh ? 'zh-Hans' : 'en';
+    document.documentElement.lang = isZh ? 'zh-CN' : 'en';
     document.getElementById('langToggle').textContent = isZh ? '中文' : 'EN';
   }
 
@@ -50,6 +50,8 @@
     document.getElementById('phase1-card').classList.add('paycheck-hidden');
     document.getElementById('phase2-card').classList.remove('paycheck-hidden');
     document.getElementById('phase2-note').classList.remove('paycheck-hidden');
+    const donut = document.getElementById('phase2-donut');
+    if (donut) donut.classList.remove('paycheck-hidden');
     document.getElementById('reveal-btn-6').disabled = true;
     document.getElementById('nextBtn').disabled = false;
   }

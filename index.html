@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>看懂 Offer 与福利 · Job Offers &amp; Benefits Workshop</title>
-  <meta name="description" content="Bilingual workshop for new immigrants in LA: read offer letters, decode paycheck deductions, understand 401k, health insurance, PTO, and W-4. CSC.">
+  <meta name="description" content="Bilingual workshop for new immigrants in LA: read offer letters, decode paycheck deductions, understand 401(k), health insurance, PTO, and W-4. CSC.">
   <link rel="canonical" href="https://job-offers-workshop.pages.dev/">
   <meta property="og:title" content="看懂 Offer 与福利 · Job Offers &amp; Benefits Workshop">
-  <meta property="og:description" content="Bilingual job offer and benefits workshop — read your offer letter, understand pay, health insurance, 401k, PTO, W-4, and when to negotiate.">
+  <meta property="og:description" content="Bilingual job offer and benefits workshop — read your offer letter, understand pay, health insurance, 401(k), PTO, W-4, and when to negotiate.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://job-offers-workshop.pages.dev/">
   <meta property="og:site_name" content="Chinatown Service Center">
@@ -18,8 +18,12 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="看懂 Offer 与福利 · Job Offers & Benefits Workshop · Chinatown Service Center">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="看懂 Offer 与福利 · Job Offers &amp; Benefits Workshop">
+  <meta name="twitter:description" content="Bilingual job offer and benefits workshop — read your offer letter, understand pay, health insurance, 401(k), PTO, W-4, and when to negotiate.">
   <meta name="twitter:image" content="https://job-offers-workshop.pages.dev/og-image.png">
+  <meta name="twitter:image:alt" content="看懂 Offer 与福利 · Job Offers & Benefits Workshop · Chinatown Service Center">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
@@ -97,8 +101,8 @@
             <span class="en">Benefits</span>
           </div>
           <div class="agenda-en">
-            <span class="zh">医保 · 401k · 假期</span>
-            <span class="en">Health · 401k · PTO</span>
+            <span class="zh">医保 · 401(k) · 假期</span>
+            <span class="en">Health · 401(k) · PTO</span>
           </div>
         </div>
       </div>
@@ -150,7 +154,7 @@
           <div class="check-num">5</div>
           <div>
             <div class="check-text-zh"><span class="zh">福利和假期</span><span class="en">Benefits &amp; time off</span></div>
-            <div class="check-text-en"><span class="zh">Benefits — 医保？401k？带薪假期？什么时候开始？</span><span class="en">Health insurance? 401k? Paid time off? When does it start?</span></div>
+            <div class="check-text-en"><span class="zh">Benefits — 医保？401(k)？带薪假期？什么时候开始？</span><span class="en">Health insurance? 401(k)? Paid time off? When does it start?</span></div>
           </div>
         </li>
       </ul>
@@ -313,14 +317,29 @@
         <span class="en">Reveal Net Pay</span>
       </button>
 
+      <figure class="viz viz-donut paycheck-hidden" id="phase2-donut" role="img" aria-label="78 percent take-home vs 22 percent deductions">
+        <svg viewBox="0 0 120 120" width="180" height="180" aria-hidden="true">
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#fde0d0" stroke-width="18"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#d97706" stroke-width="18"
+                  stroke-dasharray="244.94 314.16" stroke-dashoffset="0"
+                  transform="rotate(-90 60 60)" stroke-linecap="butt"/>
+          <text x="60" y="58" text-anchor="middle" font-size="22" font-weight="800" fill="#5b21b6">78%</text>
+          <text x="60" y="78" text-anchor="middle" font-size="11" fill="#5a516b">take-home</text>
+        </svg>
+        <figcaption style="margin-top:4px;font-size:15px;color:var(--text-sub);text-align:center;max-width:280px;">
+          <span class="zh">$1,253.60 ÷ $1,600 ≈ 78% 实际到手 · 22% 被扣</span>
+          <span class="en">$1,253.60 of $1,600 ≈ 78% take-home · 22% deducted</span>
+        </figcaption>
+      </figure>
+
       <div class="example-note paycheck-hidden" id="phase2-note" style="max-width:640px;">
         <div class="example-note-zh">
           <span class="zh">💡 大约 22% 被扣 — 这就叫 "扣税"</span>
           <span class="en">💡 About 22% comes out — these are "payroll deductions"</span>
         </div>
         <div class="example-note-en">
-          <span class="zh">每个人扣多少不同 — 看您的 W-4 怎么填、有没有医保、401k 等。</span>
-          <span class="en">Exact amount varies by W-4, health plan, and 401k choices.</span>
+          <span class="zh">每个人扣多少不同 — 看您的 W-4 怎么填、有没有医保、401(k) 等。</span>
+          <span class="en">Exact amount varies by W-4, health plan, and 401(k) choices.</span>
         </div>
       </div>
     </div>
@@ -331,8 +350,8 @@
     <div class="slide-inner">
       <div class="topic-badge"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20v18H2z"/><path d="m2 7 10 6 10-6"/></svg> <span class="zh">退休账户</span><span class="en">Retirement</span></div>
       <h2 class="zh-headline">
-        <span class="zh">401k：免费的钱</span>
-        <span class="en">401k: Free Money</span>
+        <span class="zh">401(k)：免费的钱</span>
+        <span class="en">401(k): Free Money</span>
       </h2>
       <div class="en-subtitle">
         <span class="zh">雇主帮你存钱进退休账户 — 千万别错过</span>
@@ -366,6 +385,10 @@
         <div style="font-size:15px;font-weight:500;margin-top:6px;color:var(--text-sub);">
           <span class="zh">大多数雇主：您存 3–6%，他们配同样的。不存就等于放弃这笔钱。</span>
           <span class="en">Most employers match 3–6%. If you don't contribute, you give up free money.</span>
+        </div>
+        <div style="font-size:14px;font-weight:500;margin-top:8px;color:var(--text-sub);line-height:1.5;">
+          <span class="zh">📖 401(k) = 退休账户 · "Vesting" 归属期 = 雇主配的钱要工作满 X 年才完全是您的 (常见 3–5 年) · 离职前先问 HR 您归属了多少。</span>
+          <span class="en">📖 401(k) = retirement account · "Vesting" = how long you must stay before the employer match is fully yours (often 3–5 yrs) · Ask HR your vesting % before leaving a job.</span>
         </div>
       </div>
     </div>
@@ -507,8 +530,8 @@
       <!-- Q2 (hidden until Q1 revealed) -->
       <div class="q2-block" id="q2-block">
         <div class="quiz-question" style="margin-top:16px;">
-          <div class="quiz-q-zh"><span class="zh">② 雇主提供 401k 配对，但我不存钱 — 我没有任何损失。</span><span class="en">② If the employer offers a 401k match but I don't contribute, I lose nothing.</span></div>
-          <div class="quiz-q-en"><span class="zh">If my employer offers a 401k match and I don't contribute, I lose nothing.</span><span class="en">雇主有 401k 配对，我不存钱也无所谓。</span></div>
+          <div class="quiz-q-zh"><span class="zh">② 雇主提供 401(k) 配对，但我不存钱 — 我没有任何损失。</span><span class="en">② If the employer offers a 401(k) match but I don't contribute, I lose nothing.</span></div>
+          <div class="quiz-q-en"><span class="zh">If my employer offers a 401(k) match and I don't contribute, I lose nothing.</span><span class="en">雇主有 401(k) 配对，我不存钱也无所谓。</span></div>
         </div>
         <div class="vote-prompt"><span class="zh">🙋 举手 — 对 TRUE / 错 FALSE</span><span class="en">🙋 Raise your hand — TRUE / FALSE</span></div>
 
@@ -535,15 +558,15 @@
         <span class="en">When to Negotiate vs Accept</span>
       </h2>
       <div class="en-subtitle">
-        <span class="zh">谈判很正常 — 雇主预期您会问</span>
-        <span class="en">Negotiation is normal — employers expect it</span>
+        <span class="zh">谈判不是讨价还价 — 是替自己说话。雇主预期您会问。</span>
+        <span class="en">Negotiating isn't haggling — it's speaking up for yourself. Employers expect it.</span>
       </div>
       <div class="negotiate-grid">
         <div class="negotiate-card accept">
           <div class="negotiate-title"><span class="zh">✓ 可以直接接受</span><span class="en">✓ Accept the Offer</span></div>
           <ul>
             <li><span class="zh-row"><span class="zh">薪水与您调研的相符</span><span class="en">Pay matches your research</span></span></li>
-            <li><span class="zh-row"><span class="zh">福利好 (医保、401k、PTO)</span><span class="en">Strong benefits package</span></span></li>
+            <li><span class="zh-row"><span class="zh">福利好 (医保、401(k)、PTO)</span><span class="en">Strong benefits package</span></span></li>
             <li><span class="zh-row"><span class="zh">是您唯一的 Offer，急需工作</span><span class="en">It's your only offer and you need work</span></span></li>
             <li><span class="zh-row"><span class="zh">小时工/入门职位 — 通常不谈</span><span class="en">Hourly entry-level — usually not negotiable</span></span></li>
           </ul>
@@ -560,12 +583,12 @@
       </div>
       <div class="example-note">
         <div class="example-note-zh">
-          <span class="zh">💬 简单话术 How to ask</span>
-          <span class="en">💬 Simple Script</span>
+          <span class="zh">💬 简单话术 — 礼貌专业</span>
+          <span class="en">💬 Simple Script — Polite &amp; Professional</span>
         </div>
         <div class="example-note-en">
-          <span class="zh">"Thank you for the offer. Based on my experience, would you consider $X?" — 谢谢您的录用。考虑到我的经验，可以给到 $X 吗？</span>
-          <span class="en">"Thank you for the offer. Based on my experience, would you consider $X?" — polite and professional.</span>
+          <span class="zh">"Thank you for the offer. Based on my experience, would you consider $X?" — 谢谢您的录用。考虑到我的经验，可以给到 $X 吗？ 在美国，问一句不会得罪人 — 这是替自己说话，不是不识抬举。</span>
+          <span class="en">"Thank you for the offer. Based on my experience, would you consider $X?" — Asking once is normal in the U.S. It's advocating for yourself, not being ungrateful.</span>
         </div>
       </div>
     </div>
