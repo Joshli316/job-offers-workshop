@@ -96,10 +96,11 @@ Strict CSP — no `'unsafe-inline'` in `script-src`. All scripts are external fi
 - frame-ancestors, base-uri, form-action all 'self'
 
 ## Deployment
-Cloudflare Pages → `job-offers-workshop.pages.dev`
-Deploy: `wrangler pages deploy . --project-name job-offers-workshop --branch main`
+Cloudflare Pages → `job-offers-workshop.pages.dev` (production branch: `main`)
+Deploy: `./build.sh && wrangler pages deploy dist --project-name job-offers-workshop --branch main`
+(`build.sh` curates a `dist/` of public assets only — excludes CLAUDE.md, tests/, etc. `dist/` is tracked in git here, unlike sibling decks that gitignore it.)
 
-**Before deploying:** bump `CACHE` version in `sw.js` (e.g. `v4` → `v5`) to invalidate cached assets on visitor devices.
+**Before deploying:** bump `CACHE` version in `sw.js` (e.g. `v9` → `v10`) to invalidate cached assets on visitor devices.
 
 ## Tests
 Playwright smoke tests cover: all-13-slide navigation, language toggle persistence, reveal-gate logic, paycheck reveal sequencing, quiz Q1→Q2 sequencing.
