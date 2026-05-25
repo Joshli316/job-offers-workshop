@@ -1313,6 +1313,9 @@ a:focus-visible {
     zoom: 0.7;
   }
   .slide:last-child { page-break-after: auto; break-after: auto; }
+  /* slide-6 (take-home pay activity) force-reveals both paycheck phases stacked,
+     overflowing one landscape page at 0.7 — shrink just this slide to keep it on one page */
+  #slide-6 { zoom: 0.62; }
   .slide, .slide * { animation: none !important; }
   /* hide interactive chrome (nav, toggles, reveal + print buttons, hub link) */
   .slide-header, .slide-footer, .lang-toggle, .skip-to-main, .key-hint,
